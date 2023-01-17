@@ -16,7 +16,7 @@ dependencies {
 }
 
 application {
-    mainClass = 'demo.Utils'
+    mainClass = 'com.epam.demo.Utils'
 }
 test {
     useJUnitPlatform()
