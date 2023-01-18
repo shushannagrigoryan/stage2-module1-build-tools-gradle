@@ -1,27 +1,16 @@
 //add everything here
-plugins{
-    id 'java'
-    id 'application'
-}
-
 group = 'org.gradle'
 version = '1.0'
 
 repositories {
     mavenCentral()
 }
-
 dependencies {
     implementation project(':utils')
-    //testImplementation group: 'junit', name: 'junit', version: '4.11'
 }
 
-application {
-    mainClass = 'com.epam.demo.Utils'
-}
 test {
     useJUnitPlatform()
 }
-
 
 compileJava {}.dependsOn(':utils:publishToMavenLocal')
